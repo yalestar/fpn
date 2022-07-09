@@ -4,5 +4,5 @@ build_fpn:
 clean:
 	rm -rf bin
 
-install:
-	go install ./cmd/fpn
+install: build_fpn
+	go install fpn

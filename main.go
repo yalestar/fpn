@@ -37,6 +37,7 @@ func listEverything(path string) {
 	for _, file := range files {
 		filename := filepath.Join(path, file.Name())
 		allFiles = append(allFiles, filename)
+		fmt.Println(filename)
 	}
 
 	if copyToClipboard {
